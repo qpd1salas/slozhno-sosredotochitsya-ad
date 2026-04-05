@@ -1,4 +1,35 @@
 /*
   Переменные для вашего проекта
   и их переопределение под различные устройства
+
+  Темная тема
 */
+
+
+:root {
+  --accent-color: #FF0070;
+  --decor-color: #FF0070;
+  --title-decor-text:#000028;
+  --title-font-color: #DB00FF;
+  --background-image: url('../images/cover-image-dark.png');
+  --main-cards-text-color: #F1B2CE;
+  --main-first-top-margin: clamp(40px, 2.47px + 5.62vw, 60px);
+  --button-when-hover: #FF007066;
+  --gap_between-sections:50px;
+  --header_grid_title-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+}
+
+@media (width >= 768px) {
+  :root {
+    --main-first-top-margin: 60px;
+    --gap_between-sections:80px;
+    --header_grid_title-font-size: clamp(120px, 9.00px + 14.45vw, 157px);
+  }
+  
+}
+
+@media (width >= 1024px) {
+  :root {
+    --width-two-five-section: 40.625rem;
+  }
+}
